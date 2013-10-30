@@ -1,0 +1,22 @@
+{
+    "author": "Nicholas Barger",
+    "name": "bluewater",
+    "description": "An enterprise class, open source, inventory management system.",
+    
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "3.4.3",
+        "mongojs": "0.9.6"
+    },
+    
+    "private": true,
+    "bugs": "https://github.com/nicholasbarger/bluewater/issues",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:nicholasbarger/bluewater.git"
+    },
+    
+    "scripts": {
+        "start": "node server"
+    }
+}
