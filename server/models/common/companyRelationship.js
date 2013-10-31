@@ -1,7 +1,7 @@
 var Company = require('./company');
 
 /// The relationship between two companies
-function City() {
+function CompanyRelationship() {
     this.id = 0;
     
     // the type of relationship
@@ -17,4 +17,4 @@ function City() {
     this.modified = null;
 }
 
-module.exports = UOM;
+module.exports = CompanyRelationship;

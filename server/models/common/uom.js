@@ -10,8 +10,8 @@ function UOM() {
     // a language specific text name of the status
     this.name = '';
     
-    // the collection of language specific descriptors for the name of the status
-    this.nameDescriptors = [];
+    // the collection of language specific descriptors 
+    this.descriptors = [];
     
     // the status of the unit of measure
     this.status = new Status();

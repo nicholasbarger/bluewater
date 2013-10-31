@@ -21,4 +21,4 @@ function City() {
     this.modified = null;
 }
 
-module.exports = UOM;
+module.exports = City;

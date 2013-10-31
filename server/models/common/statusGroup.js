@@ -1,4 +1,4 @@
-// A group of statuses that work together to form a workflow
+/// A group of statuses that work together to form a workflow
 function StatusGroup() {
     this.id = 0;
     
@@ -8,8 +8,8 @@ function StatusGroup() {
     // a language specific text name of the status
     this.name = '';
     
-    // the collection of language specific descriptors for the name of the status
-    this.nameDescriptors = [];
+    // the collection of language specific descriptors
+    this.descriptors = [];
     
     this.created = null;
     this.modified = null;
