@@ -5,11 +5,11 @@ function TransactionTypeGroup() {
     // a human readable identifier for the transaction type group
     this.code = '';
     
-    // a language specific text name of the transaction type group
-    this.name = '';
-    
     // the collection of language specific descriptors
     this.descriptors = [];
+    
+    // a language specific text name of the transaction type group
+    this.name = '';
     
     this.created = null;
     this.modified = null;

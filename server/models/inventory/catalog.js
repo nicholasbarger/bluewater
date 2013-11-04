@@ -7,6 +7,9 @@ function Catalog() {
     // a human readable identifier for the catalog
     this.code = '';
     
+    // the name of the catalog in various languages
+    this.descriptors = [];
+    
     // the end date/time for the catalog to be in effect
     this.effectiveEnd = null;
     
@@ -18,9 +21,6 @@ function Catalog() {
 
     // the name of the catalog
     this.name = '';
-    
-    // the name of the catalog in various languages
-    this.descriptors = [];
     
     // the status of the catalog
     this.status = new Status();

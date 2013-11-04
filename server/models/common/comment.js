@@ -6,11 +6,11 @@ var User = require('../membership/user');
 function Comment() {
     this.id = 0;
     
-    // the actual comment
-    this.text = '';
-    
     // the language the comment is made in
     this.language = new Language();
+    
+    // the actual comment
+    this.text = '';
     
     // the status of the city
     this.status = new Status();

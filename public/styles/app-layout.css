@@ -1,0 +1,65 @@
+h1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.main-content {
+    margin-top: 125px;
+    margin-left: 15px;
+}
+
+.navbar-actions {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar-actions span, .navbar-actions a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-company {
+    padding: 5px;
+    margin-top: 40px;
+    clear: right;
+    float: right;
+}
+
+.navbar-brand .logo {
+    width: 75px;
+}
+
+.navbar-header {
+    width: 100%;
+}
+
+.nav-sidebar {
+    margin-top: 125px;
+}
+.nav-sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+}
+.nav-sidebar ul li {
+    padding: 15px;
+}
+
+.padded {
+    padding: 25px;
+}

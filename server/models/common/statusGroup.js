@@ -5,11 +5,11 @@ function StatusGroup() {
     // a human readable code for the status group
     this.code = '';
     
-    // a language specific text name of the status
-    this.name = '';
-    
     // the collection of language specific descriptors
     this.descriptors = [];
+    
+    // a language specific text name of the status
+    this.name = '';
     
     this.created = null;
     this.modified = null;

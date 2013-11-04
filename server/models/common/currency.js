@@ -7,11 +7,11 @@ function Currency() {
     // the human readable identifier for this currency
     this.code = '';
     
-    // the name of the currency
-    this.name = '';
-    
     // the collection of language specific descriptors
     this.descriptors = [];
+    
+    // the name of the currency
+    this.name = '';
     
     // the status of the currency
     this.status = new Status();

@@ -7,11 +7,11 @@ function Status() {
     // a human-readable reference code for the status
     this.code = '';
     
-    // a language specific text name of the status
-    this.name = '';
-    
     // the collection of language specific descriptors 
     this.descriptors = [];
+    
+    // a language specific text name of the status
+    this.name = '';
     
     // the categorization of the status to be used with other similar statuses in a workflow
     this.statusGroup = new StatusGroup();

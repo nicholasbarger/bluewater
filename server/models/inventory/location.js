@@ -1,5 +1,5 @@
-var Status = require('../common/status.js');
-var Warehouse = require('../common/warehouse.js');
+var Status = require('../common/status');
+var Warehouse = require('../common/warehouse');
 
 /// The location in a warehouse (or any container) of items.
 function Location() {

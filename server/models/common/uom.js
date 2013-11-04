@@ -7,11 +7,11 @@ function UOM() {
     // a human-readable reference code for the status
     this.code = '';
     
-    // a language specific text name of the status
-    this.name = '';
-    
     // the collection of language specific descriptors 
     this.descriptors = [];
+    
+    // a language specific text name of the status
+    this.name = '';
     
     // the status of the unit of measure
     this.status = new Status();

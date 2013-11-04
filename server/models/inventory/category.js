@@ -7,14 +7,14 @@ function Category() {
     // a human readable identifier for the catalog
     this.code = '';
     
+    // the name of the catalog in various languages
+    this.descriptors = [];
+    
     // a collection of items included in the catalog
     this.items = [];
 
     // the name of the catalog
     this.name = '';
-    
-    // the name of the catalog in various languages
-    this.descriptors = [];
     
     // the status of the catalog
     this.status = new Status();

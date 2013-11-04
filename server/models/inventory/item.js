@@ -1,9 +1,13 @@
+var BillOfMaterial = require('../manufacturing/billOfMaterial');
 var Status = require('../common/status');
 var UOM = require('../common/uom');
 
 /// The definition of an item which can be sold, built or purchased.
 function Item() {
     this.id = 0;
+    
+    // the bill of material
+    this.billOfMaterial = new BillOfMaterial();
     
     // a short description of the item
     this.briefDescription = '';
@@ -68,6 +72,10 @@ function Item() {
     // the name of the item
     this.name = '';
     
+    // the price for this item in the default currency
+    // calculations on price occur due to quantity ordered, sales, etc.
+    this.price = new Price();
+    
     // a collection of user ratings for this item
     this.ratings = [];
     
@@ -79,6 +87,9 @@ function Item() {
     
     // the current revision
     this.revision = '';
+    
+    // a collection of routings to define how to make this item
+    this.routings = [];
     
     // the status the item is currently in (new, backordered, available, etc.)
     this.status = new Status();

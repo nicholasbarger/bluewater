@@ -5,11 +5,11 @@ function CompanyRelationshipType() {
     // a human readable identifier for the relationship
     this.code = '';
     
-    // a language specific text name of the relationship
-    this.name = '';
-    
     // the collection of language specific descriptors
     this.descriptors = [];
+    
+    // a language specific text name of the relationship
+    this.name = '';
     
     this.created = null;
     this.modified = null;
