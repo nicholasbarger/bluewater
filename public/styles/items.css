@@ -49,6 +49,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
     float: left;
     margin-right: 15px;
     width: 50px;
+    margin-bottom: 15px;
+}
+
+.images {
+}
+
+.image {
+    width: 125px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .important {
@@ -56,6 +67,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
 }
 
 .manufacturer {
+    margin-bottom: 15px;
 }
 .manufacturer .logo {
     float: left;
@@ -88,4 +100,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
 .sub-banner h1, .sub-banner h2, .sub-banner h3, .sub-banner h4, .sub-banner h5 {
     margin: 0px;
     padding: 0px;
+}
+
+.videos {
+}
+
+.video {
+    width: 125px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.video img {
+    width: 100px;
+    height: 60px;
 }
