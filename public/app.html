@@ -57,14 +57,15 @@
             <div class="row-fluid">
                 <div class="col-md-2">
                     <div class="nav-sidebar">
-                        <input type="search" placeholder="search" />
+                        <form id="searchForm" class="form-search">
+                            <input type="search" placeholder="search" class="form-control" />
+                        </form>
                         <ul>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Inventory</a></li>
-                            <li><a href="#">Items</></li>
-                                
-                                <li><a href="#">Security</a></li>
-                            <li><a href="#">System</a></li>
+                            <li><a href="#"><i class="fa fa-group"></i> People</a></li>
+                            <li><a href="#"><i class="fa fa-barcode"></i> Inventory</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-qrcode"></i> Items</></li>
+                            <li><a href="#"><i class="fa fa-lock"></i> Security</a></li>
+                            <li><a href="#"><i class="fa fa-cogs"></i> System</a></li>
                         </ul>
                     </div>     
                 </div>
@@ -108,7 +109,7 @@
                                     
                                     <hr>
                                     
-                                    <div class="row-fluid">
+                                    <div class="row-fluid clearfix">
                                         <div class="col-md-2">
                                             <img src="images/demo_item.jpg" alt="Tshirt" title="Tshirt">     
                                         </div>
@@ -130,221 +131,628 @@
                             </div>
                             
                             <div class="tab-pane padded" id="item1">
-                                <h1>GC-1300 Rev 1</h1>
+                                <h1 class="pull-left">GC-1300 Rev 1</h1>
                                 
-                                <form role="form">
-                                
-                                <div class="container-fluid">
-                                    <div class="row-fluid clearfix">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="status">Status:</label>
-                                                <span>Active</span>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="uom">Unit of Measure:</label>
-                                                <span>Each</span>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="revision">Current Revision:</label>
-                                                <span>1</span><br>
-                                                <a href="#">Revision history</a>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label>Base Price:</label>
-                                                <span>14.99 USD</span><br>
-                                                <a href="#">Base price currency matrix</a> |
-                                                <a href="#">Complex pricing</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="isPurchased">
-                                                    Is Purchased?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="isManufactured">
-                                                    Is Manufactured?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="isSaleable">
-                                                    Is Saleable?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="isDigital">
-                                                    Is Digital?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="isUnlimitedQuantity">
-                                                    Is Unlimited?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-4">
-                                            <img src="images/demo_item_lg.jpg" style="width: 100%; vertical-align: top;">
-                                        </div>
-                                    
-                                    </div>
-                                    
-                                    <div class="row-fluid clearfix">
-                                        <div class="col-md-12">
-                                            <div class="banner">
-                                                <h3>Complex Pricing</h3>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="currency">Currency</label>
-                                                <span>USD</span><br>
-                                                <a href="#">Pricing matrix by currency</a>
-                                            </div>
-                                            
-                                            <div class="sub-banner">
-                                                <h4>Pricing Rules and Priorities</h4>
-                                            </div>
-                                            <p>Initial pricing rules and priorities are defined at the company level.  Changes below only affect this item.</p>
-                                        </div>  
-                                    </div>
-                                    
-                                    <div class="row-fluid clearfix">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="enableBundling">
-                                                    Enable bundling?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="enableBulkDiscounts">
-                                                    Enable bulk discounts?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="checkbox">
-                                                  <label>
-                                                    <input type="checkbox" value="enableCommission">
-                                                    Enable commission?
-                                                  </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <label for="pricingPriority1">1st Priority</label>
-                                                <span>Bulk discounts (inclusive)</span>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="pricingPriority2">2nd Priority</label>
-                                                <span>Bundling (inclusive)</span>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="pricingPriority3">3rd Priority</label>
-                                                <span>Base price (inclusive)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row-fluid clearfix">
-                                        <div class="col-md-12">
-                                            <div class="sub-banner">
-                                                <h4>Item Bundling</h4>
-                                            </div>
-                                            <p>Select a bundle to modify or <a href="#">create a new bundle</a> to apply pricing to.</p>
-                                            
-                                            <div class="bundles">
-                                                <div class="bundle">
-                                                    <h5>Big Government Bundle</h5>
-                                                    <span>Contains <a href="#">1</a> other item in bundle</span>
-                                                </div>
-                                                
-                                                <div class="bundle">
-                                                    <h5>Happy Science Bundle</h5>
-                                                    <span>Contains <a href="#">3</a> other items in bundle</span>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div>
+                                <div class="pull-right" style="text-align: right;">
+                                    <select>
+                                        <option>Jump to section</option>
+                                        <option>Pricing</option>
+                                        <option>Descriptions</option>
+                                        <option>Dimensions</option>
+                                        <option>Categories</option>
+                                        <option>Revisions</option>
+                                        <option>Manufacturers</option>
+                                        <option>Distributors</option>
+                                        <option>Quantity &amp; Locations</option>
+                                    </select>
                                     
                                     <br>
-                                    
-                                    <div class="row-fluid clearfix">
-                                        <div class="col-md-12">
-                                            <div class="banner">
-                                                <h3>Item Descriptions</h3>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <label for="language">Language</label>
-                                                <span>English (EN)</span><br>
-                                                <a href="#">Content matrix by language</a>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="sub-banner">
-                                                    <h4>Brief Description</h4>
-                                                </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a varius libero. Etiam lectus lorem, elementum ut quam rutrum, consequat varius arcu.</p>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="sub-banner">
-                                                    <h4>Long Description</h4>
-                                                </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium ligula a nunc bibendum mollis. Quisque non ornare est, sit amet mattis lectus. Suspendisse leo diam, convallis id scelerisque vel, congue vitae orci. </p>
-                                                <p>Nullam sit amet dolor porta, varius dolor nec, consequat quam. Duis non turpis vitae massa molestie aliquam. Vivamus euismod sem id lacus ullamcorper tincidunt. Phasellus facilisis justo a quam fringilla scelerisque. Donec vel consectetur enim, ac tincidunt leo. Phasellus vehicula erat et feugiat pellentesque.</p>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                                <div class="sub-banner">
-                                                    <h4>Html</h4>
-                                                </div>
-                                                <pre>&lt;div class="item"&gt;Here is information in html about the item.&lt;/div&gt;</pre>
-                                                
-                                            </div>
-                                        </div>  
-                                    </div>
-                                    
+                                    <i class="fa fa-unlock"></i> <small>Unlocked</small>
                                 </div>
                                 
+                                <hr style="clear: both;">
+                                
+                                <form role="form">
+                                    
+                                    <div class="container-fluid">
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="status">Status:</label>
+                                                    <span>Active</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="uom">Unit of Measure:</label>
+                                                    <span>Each</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="revision">Current Revision:</label>
+                                                    <span>1</span><br>
+                                                    <a href="#">Revision history</a>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label>Base Price:</label>
+                                                    <span>14.99 USD</span><br>
+                                                    <a href="#">Base price currency matrix</a> |
+                                                    <a href="#">Complex pricing</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isPurchased">
+                                                            Is Purchased?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isManufactured">
+                                                            Is Manufactured?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isSaleable">
+                                                            Is Saleable?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isDigital">
+                                                            Is Digital?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isUnlimitedQuantity">
+                                                            Is Unlimited?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="images/demo_item_lg.jpg" style="width: 100%; vertical-align: top;">
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Complex Pricing</h3>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="currency">Currency</label>
+                                                    <span>USD</span><br>
+                                                    <a href="#">Pricing matrix by currency</a>
+                                                </div>
+                                                
+                                                <div class="sub-banner">
+                                                    <h4>Pricing Rules and Priorities</h4>
+                                                </div>
+                                                <p>Initial pricing rules and priorities are defined at the company level.  Changes below only affect this item.</p>
+                                            </div>  
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="enableBundling">
+                                                            Enable bundling?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="enableBulkDiscounts">
+                                                            Enable bulk discounts?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="enableCommission">
+                                                            Enable commission?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <label for="pricingPriority1">1st Priority</label>
+                                                    <span>Bulk discounts (inclusive)</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="pricingPriority2">2nd Priority</label>
+                                                    <span>Bundling (inclusive)</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="pricingPriority3">3rd Priority</label>
+                                                    <span>Base price (inclusive)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="sub-banner">
+                                                    <h4>Item Bundling</h4>
+                                                </div>
+                                                <p>Select a bundle to modify or <a href="#">create a new bundle</a> to apply pricing to.</p>
+                                                
+                                                <div class="bundles">
+                                                    <div class="bundle">
+                                                        <h5>Big Government Bundle</h5>
+                                                        <span>Contains <a href="#">1</a> other item in bundle</span>
+                                                    </div>
+                                                    
+                                                    <div class="bundle">
+                                                        <h5>Happy Science Bundle</h5>
+                                                        <span>Contains <a href="#">3</a> other items in bundle</span>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Item Descriptions</h3>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="language">Language</label>
+                                                    <span>English (EN)</span><br>
+                                                    <a href="#">Content matrix by language</a>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="sub-banner">
+                                                        <h4>Brief Description</h4>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a varius libero. Etiam lectus lorem, elementum ut quam rutrum, consequat varius arcu.</p>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="sub-banner">
+                                                        <h4>Long Description</h4>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium ligula a nunc bibendum mollis. Quisque non ornare est, sit amet mattis lectus. Suspendisse leo diam, convallis id scelerisque vel, congue vitae orci. </p>
+                                                    <p>Nullam sit amet dolor porta, varius dolor nec, consequat quam. Duis non turpis vitae massa molestie aliquam. Vivamus euismod sem id lacus ullamcorper tincidunt. Phasellus facilisis justo a quam fringilla scelerisque. Donec vel consectetur enim, ac tincidunt leo. Phasellus vehicula erat et feugiat pellentesque.</p>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="sub-banner">
+                                                        <h4>Html</h4>
+                                                    </div>
+                                                    <pre>&lt;div class="item"&gt;Here is information in html about the item.&lt;/div&gt;</pre>
+                                                    
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Item Dimensions</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="height">Height</label>
+                                                    <span>36 inches</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="length">Length</label>
+                                                    <span>48 inches</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="width">Width</label>
+                                                    <span>36 inches</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="weight">Weight</label>
+                                                    <span>1 pound</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isCollapsable">
+                                                            Is collapsable?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="hasSizingChart">
+                                                            Has a sizing chart?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="isByVolume">
+                                                            Is by volume?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="sub-banner">
+                                                    <h4>Sizing Chart</h4>
+                                                </div>
+                                                <p>Specify criteria for sizing chart by modifying existing entries or <a href="#">add new sizes</a>.  You can also <a href="#">upload an image</a> to be associated with the data.</p>
+                                                
+                                                <div class="responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr class="shade">
+                                                                <td>Dimensions/Size</td>
+                                                                <td colspan="2">XS</td>
+                                                                <td colspan="2">S</td>
+                                                                <td colspan="2">M</td>
+                                                                <td colspan="2">L</td>
+                                                                <td colspan="2">XL</td>
+                                                                <td colspan="2">2XL</td>
+                                                                <td colspan="2">3XL</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="shade">Chest</td>
+                                                                <td>30</td>
+                                                                <td>32</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>50</td>
+                                                                <td>52</td>
+                                                                <td>54</td>
+                                                                <td>56</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="shade">Waist</td>
+                                                                <td>26</td>
+                                                                <td>28</td>
+                                                                <td>30</td>
+                                                                <td>32</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                                <td>50</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    
+                                                    <img src="images/demo_sizing_chart.gif" alt="Sizing Chart" title="Sizing Chart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Item Categories</h3>
+                                                </div>
+                                                <p>Manage placement of this item into <a href="#">additional categories</a>.</p>
+                                                
+                                                <div class="categories">
+                                                    <div class="category">
+                                                        <h5>Science Tshirts</h5>
+                                                        <a href="#">Category details</a> | <a href="#">Item list (15)</a>
+                                                    </div>
+                                                    
+                                                    <div class="category">
+                                                        <h5>Staff Favorites</h5>
+                                                        <a href="#">Category details</a> | <a href="#">Item list (10)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Item Revisions</h3>
+                                                </div>
+                                                
+                                                <p>You can view revisions and obsolete items as a <a href="#">list</a> or via a <a href="#">timeline</a>.  You can also add a <a href="#">new replacement item</a>.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-2">
+                                                <img src="images/demo_item.jpg" alt="Tshirt" title="Tshirt">     
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <h5>GC-1300 Rev 1</h5>
+                                                <a href="#">View item</a> |
+                                                <a href="#">Show where used</a>
+                                                
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="effectiveStart">Effective Start Date:</label>
+                                                    <span>1/1/2009 12:00PM</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="effectiveEnd">Effective End Date:</label>
+                                                    <span>10/30/2011 12:00PM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-2">
+                                                <img src="images/demo_item.jpg" alt="Tshirt" title="Tshirt">     
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <h5>GC-1300 Rev 0</h5>
+                                                <a href="#">View item</a> |
+                                                <a href="#">Show where used</a>
+                                                
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="effectiveStart">Effective Start Date:</label>
+                                                    <span>10/30/2011 12:00PM</span>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label for="effectiveEnd">Effective End Date:</label>
+                                                    <span>10/30/2012 12:00PM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Manufacturers</h3>
+                                                </div>
+                                                
+                                                <p>You will find the list of manufacturers associated with this item below.  You can also <a href="#">add a new manufacturer</a> at any time.</p>
+                                                
+                                                <div class="container-fluid manufacturers">
+                                                    <div class="row-fluid clearfix">
+                                                        <div class="col-md-6">
+                                                            <div class="manufacturer">
+                                                                <img src="images/starbucks.gif" alt="Starbucks" title="Starbucks" class="logo">
+                                                                <h5>Starbucks</h5>
+                                                                <div>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                </div>
+                                                                <a href="#">View company</a> |
+                                                                <a href="#">Recent purchase orders</a> |
+                                                                <a href="#">Relationship history</a> |
+                                                                <a href="#">Contacts</a><br>
+                                                                
+                                                                <span>Accounts for <span class="important">75%</span> of product</span><br>
+                                                                <span>2 week manufacturing lead time</span><br>
+                                                                <strong>Preferred</strong>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-md-6">
+                                                            <div class="manufacturer">
+                                                                <div class="no-image logo">no image</div>
+                                                                <h5>NTN Build'Em</h5>
+                                                                <div>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                </div>
+                                                                <a href="#">View company</a> |
+                                                                <a href="#">Recent purchase orders</a> |
+                                                                <a href="#">Relationship history</a> |
+                                                                <a href="#">Contacts</a><br>
+                                                                
+                                                                <span>Accounts for <span class="important">25%</span> of product</span><br>
+                                                                <span>2 week manufacturing lead time</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Distributors</h3>
+                                                </div>
+                                                
+                                                <p>You will find the list of distributors associated with this item below.  You can also <a href="#">add a new distributor</a> at any time.</p>
+                                                
+                                                <div class="container-fluid">
+                                                    <div class="row-fluid clearfix">
+                                                        <div class="col-md-6">
+                                                            <div class="distributor">
+                                                                <img src="images/starbucks.gif" alt="Starbucks" title="Starbucks" class="logo">
+                                                                <h5>Starbucks</h5>
+                                                                <div>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                </div>
+                                                                <a href="#">View company</a> |
+                                                                <a href="#">Recent sales orders</a> |
+                                                                <a href="#">Relationship history</a> |
+                                                                <a href="#">Regional map</a><br>
+                                                                
+                                                                <span>Accounts for <span class="important">35%</span> of product sales</span><br>
+                                                                <span>Southwest U.S. Region</span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-md-6">
+                                                            <div class="manufacturer">
+                                                                <div class="no-image logo">no image</div>
+                                                                <h5>Dior</h5>
+                                                                <div>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                    <i class="fa fa-star-o"></i>
+                                                                </div>
+                                                                <a href="#">View company</a> |
+                                                                <a href="#">Recent sales orders</a> |
+                                                                <a href="#">Relationship history</a> |
+                                                                <a href="#">Regional map</a><br>
+                                                                
+                                                                <span>Accounts for <span class="important">25%</span> of product sales</span><br>
+                                                                <span>East U.S. Region</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        
+                                        <div class="row-fluid clearfix">
+                                            <div class="col-md-12">
+                                                <div class="banner">
+                                                    <h3>Inventory Quantity &amp; Locations</h3>
+                                                </div>
+                                                
+                                                <p>Displays inventory quantities and corresponding <a href="#">locations</a>.  You can <a href="#">transfer</a> or <a href="#">receive</a> inventory into or out of locations.</p>
+                                                
+                                                <div class="container-fluid">
+                                                    <div class="row-fluid">
+                                                        <div class="col-md-6">
+                                                            <div class="sub-banner">
+                                                                <h4>Locations</h4>
+                                                            </div>
+                                                            <table class="table">
+                                                                <tr>
+                                                                    <td>Miami Warehouse</td>
+                                                                    <td>1200 EA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Naples Warehouse</td>
+                                                                    <td>900 EA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Consigned Supply</td>
+                                                                    <td>300 EA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Returns</td>
+                                                                    <td>25 EA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Rejects / Hold</td>
+                                                                    <td>3 EA</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        
+                                                        <div class="col-md-6">
+                                                            <img src="images/demo_chart.png" alt="Locations" title="Locations" style="width: 100%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
                                 </form>
                                 
-                                    
+                                
                                 
                             </div>
                         </div>
