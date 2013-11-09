@@ -71,13 +71,15 @@
                 </div>
                 
                 <div class="col-md-10">
-                    <div class="main-content">
+                    <div class="main-content" ng-controller="ItemController">
                         
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
-                            <li><a href="#browse" data-toggle="tab">Browse</a></li>
-                            
-                            <li><a href="#item1" data-toggle="tab">GC-1300 Rev 1</a></li>
+                            <li><a href="#browse" data-toggle="tab">Browse</a></li>                            
+                            <li>
+                                <a href="#item1" data-toggle="tab" ng-mouseenter="showRemoveIcon('removeItem1')" ng-mouseleave="hideRemoveIcon('removeItem1')">GC-1300 Rev 1
+                                <i id="removeItem1" class="glyphicon glyphicon-remove-circle" style="display: none"></i></a>
+                            </li>
                         </ul>
                         
                         <div class="tab-content">
@@ -828,5 +830,7 @@
     <script src="libraries/jquery/jquery-1.10.2.min.js"></script>
     <script src="libraries/angular/angular.min.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="controllers/item.controller.js"></script>
 </body>
 </html>
