@@ -1,0 +1,98 @@
+<div ng-controller="ItemController">
+    <!-- tabs -->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+        <li><a href="#browse" data-toggle="tab">Browse</a></li>
+        <li id="item1-tab">
+            <a href="#item1" data-toggle="tab">GC-1300 Rev 1
+                <i id="removeItem1" class="glyphicon glyphicon-remove-circle" ng-click="closeTab('item1-tab', 'item1')"></i></a>
+        </li>
+    </ul>
+
+    <!-- tab panes -->
+    <div class="tab-content">
+
+        <div class="tab-pane active padded" id="overview" ng-include src="'views/items/item.page.overview.html'"></div>
+        <div class="tab-pane padded" id="browse" ng-include src="'views/items/item.page.browse.html'"></div>
+
+        <div class="tab-pane padded" id="item1">
+            <h1 class="pull-left">GC-1300 Rev 1</h1>
+
+            <div class="pull-right" style="text-align: right;">
+                <select>
+                    <option>Jump to section</option>
+                    <option>Pricing</option>
+                    <option>Descriptions</option>
+                    <option>Dimensions</option>
+                    <option>Categories</option>
+                    <option>Revisions</option>
+                    <option>Manufacturers</option>
+                    <option>Distributors</option>
+                    <option>Quantity &amp; Locations</option>
+                </select>
+
+                <br>
+                <i class="fa fa-unlock"></i> <small>Unlocked</small>
+            </div>
+
+            <hr style="clear: both;">
+
+            <form role="form">
+
+                <div class="container-fluid">
+
+                    <!-- General -->
+                    <div ng-include src="'views/items/item.partial.general.html'"></div>
+
+                    <br>
+
+                    <!-- Pricing -->
+                    <div ng-include src="'views/items/item.partial.pricing.html'"></div>
+
+                    <br>
+
+                    <!-- Descriptions -->
+                    <div ng-include src="'views/items/item.partial.descriptions.html'"></div>
+
+                    <br>
+
+                    <!-- Dimensions -->
+                    <div ng-include src="'views/items/item.partial.dimensions.html'"></div>
+
+                    <br>
+
+                    <!-- Categories -->
+                    <div ng-include src="'views/items/item.partial.categories.html'"></div>
+
+                    <br>
+
+                    <!-- Revisions -->
+                    <div ng-include src="'views/items/item.partial.revisions.html'"></div>
+
+                    <br>
+
+                    <!-- Manufacturers -->
+                    <div ng-include src="'views/items/item.partial.manufacturers.html'"></div>
+
+                    <br>
+
+                    <!-- Distributors -->
+                    <div ng-include src="'views/items/item.partial.distributors.html'"></div>
+
+                    <br>
+
+                    <!-- Inventory -->
+                    <div ng-include src="'views/items/item.partial.inventory.html'"></div>
+
+                    <br>
+
+                    <!-- Media -->
+                    <div ng-include src="'views/items/item.partial.media.html'"></div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
