@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sandbox</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="libraries/font-awesome-4.0.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="styles/text.css">
+    <link rel="stylesheet" type="text/css" href="styles/forms.css">
+</head>
+<body>
+
+
+<p>Search manufacturers to add to the pool which can make this item.</p>
+<form role="form">
+    <div class="col-md-4">
+        <div class="form-group row">
+            <label for="manufacturer">Manufacturer:</label>
+            <select id="manufacturer" class="form-control"></select>
+        </div>
+
+        <div class="form-group row">
+            <label for="leadTime">Lead Time:</label>
+            <div class="col-xs-9">
+                <input type="text" id="leadTime" class="form-control">
+            </div>
+            <div class="col-xs-3">
+                <select id="leadTimeUom" class="form-control">
+                    <option selected>DAY</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="costPerUnit">Cost per unit:</label><br>
+            <div class="col-xs-9">
+                <input type="text" id="costPerUnit" class="form-control">
+            </div>
+            <div class="col-xs-3">
+                <select id="costUom" class="form-control">
+                    <option selected>USD</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="minQuantity">Min. purchase quantity:</label>
+            <div class="col-xs-9">
+                <input type="text" id="minQuantity" class="form-control">
+            </div>
+            <div class="col-xs-3">
+                <select id="minQuantityUom" class="form-control">
+                    <option selected>EA</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group row">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Include Warranty
+                </label>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="libraries/jquery/jquery-1.10.2.min.js"></script>
+<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/angular/angular.min.js"></script>
+<script src="libraries/angular/angular-route.min.js"></script>
+
+<script src="config/app.config.js"></script>
+<script src="modules/items/controllers/item.controller.js"></script>
+
+</body>
+</html>

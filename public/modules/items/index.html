@@ -1,0 +1,34 @@
+<div>
+    <!-- tabs -->
+    <ul class="nav nav-tabs">
+
+        <!-- fixed tabs -->
+        <li id="overview-tab"><a href="#/items" data-target="#overview" data-toggle="tab">Overview</a></li>
+        <li id="browse-tab"><a href="#/items/browse" data-target="#browse" data-toggle="tab">Browse</a></li>
+
+        <!-- dynamic tabs -->
+        <li id="item1-tab">
+            <a href="#/items/detail/1" data-target="#item1" data-toggle="tab">GC-1300 Rev 1
+                <i id="removeItem1" class="glyphicon glyphicon-remove-circle" ng-click="closeTab('item1-tab', 'item1')"></i></a>
+        </li>
+    </ul>
+
+    <!-- tab panes -->
+    <div class="tab-content">
+
+        <!-- fixed panes -->
+        <div class="tab-pane padded" id="overview">
+            <ng-include src="'modules/items/views/item.page.overview.html'"></ng-include>
+        </div>
+
+        <div class="tab-pane padded" id="browse">
+            <ng-include src="'modules/items/views/item.page.browse.html'"></ng-include>
+        </div>
+
+        <!-- dynamic panes -->
+        <div class="tab-pane padded" id="item1">
+            <ng-include src="'modules/items/views/item.page.detail.html'"></ng-include>
+        </div>
+    </div>
+</div>
+

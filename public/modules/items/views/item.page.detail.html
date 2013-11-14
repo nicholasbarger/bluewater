@@ -1,0 +1,76 @@
+<h1 class="pull-left">GC-1300 Rev 1</h1>
+
+<div class="pull-right" style="text-align: right;">
+    <select>
+        <option>Jump to section</option>
+        <option value="pricing">Pricing</option>
+        <option value="descriptions">Descriptions</option>
+        <option value="dimensions">Dimensions</option>
+        <option value="categories">Categories</option>
+        <option value="revisions">Revisions</option>
+        <option value="manufacturers">Manufacturers</option>
+        <option value="distributors">Distributors</option>
+        <option value="inventory">Inventory</option>
+    </select>
+
+    <br>
+    <i class="fa fa-unlock"></i> <small>Unlocked</small>
+</div>
+
+<hr style="clear: both;">
+
+<form role="form">
+
+    <!-- General -->
+    <div id="general" ng-include src="'modules/items/views/item.partial.general.html'"></div>
+
+    <br>
+
+    <!-- Pricing -->
+    <div id="pricing" ng-include src="'modules/items/views/item.partial.pricing.html'"></div>
+
+    <br>
+
+    <!-- Descriptions -->
+    <div id="descriptions" ng-include src="'modules/items/views/item.partial.descriptions.html'"></div>
+
+    <br>
+
+    <!-- Dimensions -->
+    <div id="dimensions" ng-include src="'modules/items/views/item.partial.dimensions.html'"></div>
+
+    <br>
+
+    <!-- Categories -->
+    <div id="categories" ng-include src="'modules/items/views/item.partial.categories.html'"></div>
+
+    <br>
+
+    <!-- Revisions -->
+    <div id="revisions" ng-include src="'modules/items/views/item.partial.revisions.html'"></div>
+
+    <br>
+
+    <!-- Manufacturers -->
+    <div id="manufacturers" ng-include src="'modules/items/views/item.partial.manufacturers.html'"></div>
+
+    <br>
+
+    <!-- Distributors -->
+    <div id="distributors" ng-include src="'modules/items/views/item.partial.distributors.html'"></div>
+
+    <br>
+
+    <!-- Inventory -->
+    <div id="inventory" ng-include src="'modules/items/views/item.partial.inventory.html'"></div>
+
+    <br>
+
+    <!-- Media -->
+    <div id="media" ng-include src="'modules/items/views/item.partial.media.html'"></div>
+
+
+</form>
+
+<!-- modals -->
+<div ng-include src="'modules/items/views/item.modal.addManufacturer.html'"></div>
