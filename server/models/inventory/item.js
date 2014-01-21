@@ -1,4 +1,5 @@
 var BillOfMaterial = require('../manufacturing/billOfMaterial');
+var Price = require('../sales/price');
 var Status = require('../common/status');
 var UOM = require('../common/uom');
 
