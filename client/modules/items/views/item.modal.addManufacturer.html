@@ -1,0 +1,78 @@
+<div id="addManufacturerModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add a Manufacturer</h4>
+            </div>
+            <div class="modal-body">
+
+
+
+                <p>Search manufacturers to add to the pool which can make this item.</p>
+                <form role="form">
+                    <div class="col-md-4">
+                        <div class="form-group row">
+                            <label for="manufacturer">Manufacturer:</label>
+                            <select id="manufacturer" class="form-control"></select>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="leadTime">Lead Time:</label>
+                            <div class="col-xs-9">
+                                <a href="#" bw-allow-edit="leadTime">3 days</a>
+                                <input type="text" id="leadTime" class="form-control hide" bw-control="leadTime">
+                            </div>
+                            <div class="col-xs-3">
+                                <select id="leadTimeUom" class="form-control hide" bw-control="leadTime">
+                                    <option selected>DAY</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="costPerUnit">Cost per unit:</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="costPerUnit" class="form-control">
+                            </div>
+                            <div class="col-xs-3">
+                                <select id="costUom" class="form-control">
+                                    <option selected>USD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="minQuantity">Min. purchase quantity:</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="minQuantity" class="form-control">
+                            </div>
+                            <div class="col-xs-3">
+                                <select id="minQuantityUom" class="form-control">
+                                    <option selected>EA</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group row">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Include Warranty
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
