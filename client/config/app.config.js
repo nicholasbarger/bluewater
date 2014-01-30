@@ -1,5 +1,5 @@
 // app init
-var bluewater = angular.module('bluewater', ['ngRoute']);
+var bluewater = angular.module('bluewater', ['ngRoute', 'ui.bootstrap']);
 
 // routes
 bluewater.config(function($routeProvider, $locationProvider) {

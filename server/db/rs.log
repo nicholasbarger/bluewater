@@ -1,0 +1,293 @@
+Sat Nov 16 07:33:41.426 [initandlisten] MongoDB starting : pid=9864 port=27017 dbpath=./ 64-bit host=Nicholass-MacBook-Pro.local
+Sat Nov 16 07:33:41.426 [initandlisten] 
+Sat Nov 16 07:33:41.426 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Nov 16 07:33:41.426 [initandlisten] db version v2.4.8
+Sat Nov 16 07:33:41.426 [initandlisten] git version: nogitversion
+Sat Nov 16 07:33:41.426 [initandlisten] build info: Darwin Nicholass-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Sat Nov 16 07:33:41.426 [initandlisten] allocator: tcmalloc
+Sat Nov 16 07:33:41.426 [initandlisten] options: { bind_ip: "0.0.0.0", config: "./mongodb.conf", dbpath: "./", logappend: "true", logpath: "./rs.log", noauth: "true", port: 27017, replSet: "replica" }
+Sat Nov 16 07:33:41.426 [initandlisten] journal dir=./journal
+Sat Nov 16 07:33:41.426 [initandlisten] recover : no journal files present, no recovery needed
+Sat Nov 16 07:33:41.457 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 16 07:33:41.458 [initandlisten] waiting for connections on port 27017
+Sat Nov 16 07:33:41.464 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:33:41.464 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Sat Nov 16 07:33:51.465 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:01.465 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:11.466 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:21.467 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:31.468 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:37.250 [initandlisten] connection accepted from 127.0.0.1:49465 #1 (1 connection now open)
+Sat Nov 16 07:34:41.468 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:34:51.468 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:01.468 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:11.469 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:21.470 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:31.470 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:41.471 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:35:51.471 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:01.471 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:11.472 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:21.473 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:22.046 [initandlisten] connection accepted from 127.0.0.1:49483 #2 (2 connections now open)
+Sat Nov 16 07:36:31.474 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:41.473 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:36:51.474 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:01.475 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:11.476 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:21.477 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:31.477 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:39.812 [conn2] assertion 13435 not master and slaveOk=false ns:test.system.namespaces query:{}
+Sat Nov 16 07:37:41.478 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:37:51.478 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:01.478 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:04.841 [conn1] end connection 127.0.0.1:49465 (1 connection now open)
+Sat Nov 16 07:38:11.479 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:19.091 [initandlisten] connection accepted from 127.0.0.1:49521 #3 (2 connections now open)
+Sat Nov 16 07:38:21.479 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:22.786 [conn3] end connection 127.0.0.1:49521 (1 connection now open)
+Sat Nov 16 07:38:31.480 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:41.481 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:38:51.481 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:01.481 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:11.482 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:21.483 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:31.483 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:41.484 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:39:51.484 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:01.485 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:11.486 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:21.487 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:31.487 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:41.488 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:43.183 [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+Sat Nov 16 07:40:43.183 [signalProcessingThread] now exiting
+Sat Nov 16 07:40:43.183 dbexit: 
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: going to close listening sockets...
+Sat Nov 16 07:40:43.183 [signalProcessingThread] closing listening socket: 9
+Sat Nov 16 07:40:43.183 [signalProcessingThread] closing listening socket: 10
+Sat Nov 16 07:40:43.183 [signalProcessingThread] closing listening socket: 11
+Sat Nov 16 07:40:43.183 [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: going to flush diaglog...
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: going to close sockets...
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: lock for final commit...
+Sat Nov 16 07:40:43.183 [signalProcessingThread] shutdown: final commit...
+Sat Nov 16 07:40:43.183 [conn2] end connection 127.0.0.1:49483 (0 connections now open)
+Sat Nov 16 07:40:43.184 [signalProcessingThread] shutdown: closing all files...
+Sat Nov 16 07:40:43.185 [signalProcessingThread] closeAllFiles() finished
+Sat Nov 16 07:40:43.185 [signalProcessingThread] journalCleanup...
+Sat Nov 16 07:40:43.185 [signalProcessingThread] removeJournalFiles
+Sat Nov 16 07:40:43.185 [signalProcessingThread] shutdown: removing fs lock...
+Sat Nov 16 07:40:43.185 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 16 07:40:45.729 [initandlisten] MongoDB starting : pid=9894 port=27017 dbpath=./ master=1 64-bit host=Nicholass-MacBook-Pro.local
+Sat Nov 16 07:40:45.730 [initandlisten] 
+Sat Nov 16 07:40:45.730 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Nov 16 07:40:45.730 [initandlisten] db version v2.4.8
+Sat Nov 16 07:40:45.730 [initandlisten] git version: nogitversion
+Sat Nov 16 07:40:45.730 [initandlisten] build info: Darwin Nicholass-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Sat Nov 16 07:40:45.730 [initandlisten] allocator: tcmalloc
+Sat Nov 16 07:40:45.730 [initandlisten] options: { bind_ip: "0.0.0.0", config: "./mongodb.conf", dbpath: "./", logappend: "true", logpath: "./rs.log", master: "true", noauth: "true", port: 27017, replSet: "replica" }
+Sat Nov 16 07:40:45.730 [initandlisten] journal dir=./journal
+Sat Nov 16 07:40:45.730 [initandlisten] recover : no journal files present, no recovery needed
+Sat Nov 16 07:40:45.746 [initandlisten] ***
+Sat Nov 16 07:40:45.746 [initandlisten] ERROR: can't use --slave or --master replication options with --replSet
+Sat Nov 16 07:40:45.746 [initandlisten] ***
+Sat Nov 16 07:40:45.746 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 16 07:40:45.747 [initandlisten] waiting for connections on port 27017
+Sat Nov 16 07:40:45.748 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:40:45.748 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Sat Nov 16 07:40:55.749 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:05.750 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:08.223 [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+Sat Nov 16 07:41:08.223 [signalProcessingThread] now exiting
+Sat Nov 16 07:41:08.223 dbexit: 
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: going to close listening sockets...
+Sat Nov 16 07:41:08.223 [signalProcessingThread] closing listening socket: 9
+Sat Nov 16 07:41:08.223 [signalProcessingThread] closing listening socket: 10
+Sat Nov 16 07:41:08.223 [signalProcessingThread] closing listening socket: 11
+Sat Nov 16 07:41:08.223 [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: going to flush diaglog...
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: going to close sockets...
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: lock for final commit...
+Sat Nov 16 07:41:08.223 [signalProcessingThread] shutdown: final commit...
+Sat Nov 16 07:41:08.226 [signalProcessingThread] shutdown: closing all files...
+Sat Nov 16 07:41:08.226 [signalProcessingThread] closeAllFiles() finished
+Sat Nov 16 07:41:08.226 [signalProcessingThread] journalCleanup...
+Sat Nov 16 07:41:08.226 [signalProcessingThread] removeJournalFiles
+Sat Nov 16 07:41:08.226 [signalProcessingThread] shutdown: removing fs lock...
+Sat Nov 16 07:41:08.226 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 16 07:41:08.955 [initandlisten] MongoDB starting : pid=9900 port=27017 dbpath=./ master=1 64-bit host=Nicholass-MacBook-Pro.local
+Sat Nov 16 07:41:08.955 [initandlisten] 
+Sat Nov 16 07:41:08.955 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Nov 16 07:41:08.955 [initandlisten] db version v2.4.8
+Sat Nov 16 07:41:08.955 [initandlisten] git version: nogitversion
+Sat Nov 16 07:41:08.955 [initandlisten] build info: Darwin Nicholass-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Sat Nov 16 07:41:08.955 [initandlisten] allocator: tcmalloc
+Sat Nov 16 07:41:08.955 [initandlisten] options: { bind_ip: "127.0.0.1", config: "./mongodb.conf", dbpath: "./", logappend: "true", logpath: "./rs.log", master: "true", noauth: "true", port: 27017, replSet: "replica" }
+Sat Nov 16 07:41:08.956 [initandlisten] journal dir=./journal
+Sat Nov 16 07:41:08.956 [initandlisten] recover : no journal files present, no recovery needed
+Sat Nov 16 07:41:08.973 [initandlisten] ***
+Sat Nov 16 07:41:08.973 [initandlisten] ERROR: can't use --slave or --master replication options with --replSet
+Sat Nov 16 07:41:08.973 [initandlisten] ***
+Sat Nov 16 07:41:08.973 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 16 07:41:08.973 [initandlisten] waiting for connections on port 27017
+Sat Nov 16 07:41:08.974 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:08.974 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Sat Nov 16 07:41:18.975 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:28.976 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:31.312 [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+Sat Nov 16 07:41:31.312 [signalProcessingThread] now exiting
+Sat Nov 16 07:41:31.312 dbexit: 
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: going to close listening sockets...
+Sat Nov 16 07:41:31.312 [signalProcessingThread] closing listening socket: 9
+Sat Nov 16 07:41:31.312 [signalProcessingThread] closing listening socket: 10
+Sat Nov 16 07:41:31.312 [signalProcessingThread] closing listening socket: 11
+Sat Nov 16 07:41:31.312 [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: going to flush diaglog...
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: going to close sockets...
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: lock for final commit...
+Sat Nov 16 07:41:31.312 [signalProcessingThread] shutdown: final commit...
+Sat Nov 16 07:41:31.315 [signalProcessingThread] shutdown: closing all files...
+Sat Nov 16 07:41:31.315 [signalProcessingThread] closeAllFiles() finished
+Sat Nov 16 07:41:31.315 [signalProcessingThread] journalCleanup...
+Sat Nov 16 07:41:31.315 [signalProcessingThread] removeJournalFiles
+Sat Nov 16 07:41:31.315 [signalProcessingThread] shutdown: removing fs lock...
+Sat Nov 16 07:41:31.315 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 16 07:41:32.164 [initandlisten] MongoDB starting : pid=9907 port=27017 dbpath=./ master=1 64-bit host=Nicholass-MacBook-Pro.local
+Sat Nov 16 07:41:32.164 [initandlisten] 
+Sat Nov 16 07:41:32.164 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Nov 16 07:41:32.164 [initandlisten] db version v2.4.8
+Sat Nov 16 07:41:32.164 [initandlisten] git version: nogitversion
+Sat Nov 16 07:41:32.164 [initandlisten] build info: Darwin Nicholass-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Sat Nov 16 07:41:32.164 [initandlisten] allocator: tcmalloc
+Sat Nov 16 07:41:32.164 [initandlisten] options: { bind_ip: "127.0.0.1", config: "./mongodb.conf", dbpath: "./", logappend: "true", logpath: "./rs.log", master: "true", noauth: "true", port: 27017, replSet: "replica" }
+Sat Nov 16 07:41:32.165 [initandlisten] journal dir=./journal
+Sat Nov 16 07:41:32.165 [initandlisten] recover : no journal files present, no recovery needed
+Sat Nov 16 07:41:32.180 [initandlisten] ***
+Sat Nov 16 07:41:32.180 [initandlisten] ERROR: can't use --slave or --master replication options with --replSet
+Sat Nov 16 07:41:32.180 [initandlisten] ***
+Sat Nov 16 07:41:32.181 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 16 07:41:32.181 [initandlisten] waiting for connections on port 27017
+Sat Nov 16 07:41:32.182 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:32.182 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Sat Nov 16 07:41:42.182 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:41:43.339 [initandlisten] connection accepted from 127.0.0.1:49584 #1 (1 connection now open)
+Sat Nov 16 07:41:52.183 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:02.183 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:12.183 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:12.583 [conn1] assertion 13435 not master and slaveOk=false ns:test.system.namespaces query:{}
+Sat Nov 16 07:42:22.184 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:28.175 [conn1] assertion 13435 not master and slaveOk=false ns:test.system.namespaces query:{}
+Sat Nov 16 07:42:30.657 [conn1] assertion 13435 not master and slaveOk=false ns:test.system.namespaces query:{}
+Sat Nov 16 07:42:32.185 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:42.186 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:42:52.186 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:02.186 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:12.186 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:22.187 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:32.187 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:42.187 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:43:52.188 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:02.189 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:12.189 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:22.190 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:32.191 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:42.191 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 07:44:52.192 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:43:10.053 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:43:20.053 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:43:30.604 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:43:40.605 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:43:50.605 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:00.606 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:10.606 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:20.606 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:30.606 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:40.607 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:44:50.608 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:00.608 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:10.608 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:20.608 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:30.608 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:40.609 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:45:50.610 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:00.611 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:10.611 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:20.611 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:30.612 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:40.613 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:46:50.613 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:00.614 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:10.614 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:20.615 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:30.615 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:40.615 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:47:50.616 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:00.617 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:10.618 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:20.618 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:30.620 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:40.622 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:48:50.623 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:00.623 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:10.624 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:20.625 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:30.626 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:40.626 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:49:50.626 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:00.627 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:10.627 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:20.628 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:30.629 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:40.629 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:50:50.629 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:00.630 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:10.631 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:20.631 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:30.632 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:40.633 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:51:50.634 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:00.635 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:10.636 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:20.636 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:30.636 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:40.636 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:50.637 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Sat Nov 16 10:52:52.271 [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+Sat Nov 16 10:52:52.271 [signalProcessingThread] now exiting
+Sat Nov 16 10:52:52.271 dbexit: 
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: going to close listening sockets...
+Sat Nov 16 10:52:52.271 [signalProcessingThread] closing listening socket: 9
+Sat Nov 16 10:52:52.271 [signalProcessingThread] closing listening socket: 10
+Sat Nov 16 10:52:52.271 [signalProcessingThread] closing listening socket: 11
+Sat Nov 16 10:52:52.271 [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: going to flush diaglog...
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: going to close sockets...
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: lock for final commit...
+Sat Nov 16 10:52:52.271 [signalProcessingThread] shutdown: final commit...
+Sat Nov 16 10:52:52.271 [conn1] end connection 127.0.0.1:49584 (0 connections now open)
+Sat Nov 16 10:52:52.272 [signalProcessingThread] shutdown: closing all files...
+Sat Nov 16 10:52:52.272 [signalProcessingThread] closeAllFiles() finished
+Sat Nov 16 10:52:52.272 [signalProcessingThread] journalCleanup...
+Sat Nov 16 10:52:52.272 [signalProcessingThread] removeJournalFiles
+Sat Nov 16 10:52:52.272 [signalProcessingThread] shutdown: removing fs lock...
+Sat Nov 16 10:52:52.272 dbexit: really exiting now
