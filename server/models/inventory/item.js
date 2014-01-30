@@ -1,14 +1,14 @@
-var BillOfMaterial = require('../manufacturing/billOfMaterial');
-var Price = require('../sales/price');
-var Status = require('../common/status');
-var UOM = require('../common/uom');
+// var BillOfMaterial = require('../manufacturing/billOfMaterial');
+// var Price = require('../sales/price');
+// var Status = require('../common/status');
+// var UOM = require('../common/uom');
 
 /// The definition of an item which can be sold, built or purchased.
 function Item() {
     this.id = 0;
     
     // the bill of material
-    this.billOfMaterial = new BillOfMaterial();
+    //this.billOfMaterial = new BillOfMaterial();
     
     // a short description of the item
     this.briefDescription = '';
@@ -35,7 +35,7 @@ function Item() {
     this.height = 0;
     
     // the unit of measure for the height
-    this.heightUom = new UOM();
+    //this.heightUom = new UOM();
     
     // the html content/description for the item
     this.htmlContent = '';
@@ -62,7 +62,7 @@ function Item() {
     this.length = 0;
     
     // the unit of measure for the length
-    this.lengthUom = new UOM();
+    //this.lengthUom = new UOM();
     
     // a detailed description of the item
     this.longDescription = '';
@@ -75,7 +75,7 @@ function Item() {
     
     // the price for this item in the default currency
     // calculations on price occur due to quantity ordered, sales, etc.
-    this.price = new Price();
+    //this.price = new Price();
     
     // a collection of user ratings for this item
     this.ratings = [];
@@ -93,10 +93,10 @@ function Item() {
     this.routings = [];
     
     // the status the item is currently in (new, backordered, available, etc.)
-    this.status = new Status();
+    //this.status = new Status();
     
     // the default unit of measure the item is sold in
-    this.uom = new UOM();
+    //this.uom = new UOM();
     
     // a collection of vendors for this item
     this.vendors = [];
@@ -105,13 +105,13 @@ function Item() {
     this.weight = 0;
     
     // the unit of measure for the weight
-    this.weightUom = new UOM();
+    //this.weightUom = new UOM();
     
     // the generic width of the item
     this.width = 0;
     
     // the unit of measure for the width
-    this.widthUom = new UOM();
+    //this.widthUom = new UOM();
     
     this.created = null;
     this.modified = null;
@@ -135,6 +135,7 @@ Item.prototype.deactivate = function() {
 // Save changes to the item to the database
 Item.prototype.save = function() {
     // todo
+    console.log('saved');
 };
 
 module.exports = Item;
